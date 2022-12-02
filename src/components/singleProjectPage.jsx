@@ -9,10 +9,13 @@ const SingleProjectPage = () => {
   let project_id = url.split("http://localhost:3000/projects/")[1];
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+
   const [project, setProject] = useState({});
 
   useEffect(() => {
     setIsLoading(true);
+    setIsError(false);
 
     getSpecificProject(project_id)
       .then((data) => {
@@ -22,10 +25,17 @@ const SingleProjectPage = () => {
       })
       .then(() => {
         setIsLoading(false);
+        setIsError(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setIsError(true);
       });
   }, [project_id]);
 
-  return isLoading ? (
+  return isError ? (
+    <p>There is an error, this project id does not exist</p>
+  ) : isLoading ? (
     <p>Loading</p>
   ) : (
     <div className="projectCardContainer">

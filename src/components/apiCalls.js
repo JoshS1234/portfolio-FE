@@ -43,6 +43,8 @@ export const getSpecificProject = (project_id) => {
       return specificProject;
     })
     .catch((err) => {
+      console.log("There was an error");
+      console.log(err);
       return err;
     });
 };
