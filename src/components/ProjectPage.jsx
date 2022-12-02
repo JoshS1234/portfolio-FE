@@ -38,79 +38,70 @@ const ProjectPage = () => {
       });
   }, []);
 
-  return (
+  return isLoading ? (
+    <p>Loading...</p>
+  ) : (
     <div className="projectListContainer">
       <div className="projectListBox">
-        {isLoading ? (
-          <p>Loading</p>
-        ) : (
-          <>
-            <h3>Javascript projects</h3>
-            <ul>
-              {javascriptProjectList.map((project) => {
-                return (
-                  <>
-                    <li key={project.project_id.toString()}>{project.name}</li>
-                    <Link
-                      className="navLink"
-                      to={`/projects/${project.project_id}`}
-                    >
-                      <button>more details...</button>
-                    </Link>
-                  </>
-                );
-              })}
-            </ul>
-          </>
-        )}
+        <>
+          <h3>Javascript projects</h3>
+          <ul>
+            {javascriptProjectList.map((project) => {
+              return (
+                <>
+                  <li key={project.project_id}>{project.name}</li>
+                  <Link
+                    className="navLink"
+                    to={`/projects/${project.project_id}`}
+                  >
+                    <button>more details...</button>
+                  </Link>
+                </>
+              );
+            })}
+          </ul>
+        </>
       </div>
       <div className="projectListBox">
-        {isLoading ? (
-          <p>Loading</p>
-        ) : (
-          <>
-            <h3>Python projects</h3>
-            <ul>
-              {pythonProjectList.map((project) => {
-                return (
-                  <>
-                    <li key={project.project_id.toString()}>{project.name}</li>
-                    <Link
-                      className="navLink"
-                      to={`/projects/${project.project_id}`}
-                    >
-                      <button>more details...</button>
-                    </Link>
-                  </>
-                );
-              })}
-            </ul>
-          </>
-        )}
+        <>
+          <h3>Python projects</h3>
+          <ul>
+            {pythonProjectList.map((project) => {
+              return (
+                <>
+                  {console.log(project.project_id)}
+                  <li key={project.project_id}>{project.name}</li>
+                  <Link
+                    className="navLink"
+                    to={`/projects/${project.project_id}`}
+                  >
+                    <button>more details...</button>
+                  </Link>
+                </>
+              );
+            })}
+          </ul>
+        </>
       </div>
       <div className="projectListBox">
-        {isLoading ? (
-          <p>Loading</p>
-        ) : (
-          <>
-            <h3>MATLAB projects</h3>
-            <ul>
-              {matlabProjectList.map((project) => {
-                return (
-                  <>
-                    <li key={project.project_id.toString()}>{project.name}</li>
-                    <Link
-                      className="navLink"
-                      to={`/projects/${project.project_id}`}
-                    >
-                      <button>more details...</button>
-                    </Link>
-                  </>
-                );
-              })}
-            </ul>
-          </>
-        )}
+        <>
+          <h3>MATLAB projects</h3>
+          <ul>
+            {matlabProjectList.map((project) => {
+              return (
+                <>
+                  <li key={project.project_id}>{project.name}</li>
+                  <Link
+                    className="navLink"
+                    to={`/projects/${project.project_id}`}
+                  >
+                    <button>more details...</button>
+                  </Link>
+                </>
+              );
+            })}
+          </ul>
+        </>
       </div>
     </div>
   );

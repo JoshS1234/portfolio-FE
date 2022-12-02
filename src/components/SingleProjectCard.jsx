@@ -21,7 +21,7 @@ const SingleProjectCard = ({ project }) => {
       {project.video_url === "" ? (
         <p></p>
       ) : (
-        <YoutubeEmbed embedId={project.video_url} />
+        <YoutubeEmbed embedId={"AQ8lAIMnS18"} />
       )}
       {project.github === "" ? (
         <h5>Github: N/A</h5>

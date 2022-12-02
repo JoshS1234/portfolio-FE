@@ -20,7 +20,7 @@ export const getRandomProject = () => {
     .get("/projects")
     .then((data) => {
       let projectsArr = data.data.projects;
-      let randomInt = Math.floor(Math.random() * projectsArr.length);
+      let randomInt = Math.floor(Math.random() * projectsArr.length) + 1;
       return Promise.all([randomInt]);
     })
     .then((randomIntArr) => {

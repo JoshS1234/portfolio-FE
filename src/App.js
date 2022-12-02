@@ -9,7 +9,7 @@ import SingleProjectPage from "./components/singleProjectPage";
 
 function App() {
   return (
-    <div>
+    <div className="overallAppSpace">
       <h1>Joshua Spence - Portfolio</h1>
       <Navbar />
       <Routes>
