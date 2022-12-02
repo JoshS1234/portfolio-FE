@@ -5,25 +5,19 @@ export default function Navbar() {
   return (
     <nav className="navigation">
       <li>
-        <button>
-          <Link className="navLink" to="/home">
-            Home
-          </Link>
-        </button>
+        <Link className="navLink" to="/home">
+          <button>Home</button>
+        </Link>
       </li>
       <li>
-        <button>
-          <Link className="navLink" to="/projects">
-            My Projects
-          </Link>
-        </button>
+        <Link className="navLink" to="/projects">
+          <button>My Projects</button>
+        </Link>
       </li>
       <li>
-        <button>
-          <Link className="navLink" to="/about-me">
-            About Me
-          </Link>
-        </button>
+        <Link className="navLink" to="/about-me">
+          <button>About Me</button>
+        </Link>
       </li>
     </nav>
   );

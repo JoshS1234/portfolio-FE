@@ -8,6 +8,8 @@
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   padding: 1%;
+  display: flex;
+  flex-direction: row;
 }
 
 .navigation li {
@@ -15,11 +17,10 @@
   flex-direction: row;
 }
 
-.navigation li button {
-  padding: 5% 20% 5% 20%;
+.navigation li .navLink {
 }
 
-.navigation li button .navLink {
-  font-size: x-large;
+.navigation li .navLink button {
+  font-size: large;
   text-decoration: none;
 }

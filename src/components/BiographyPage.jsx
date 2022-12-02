@@ -1,7 +1,7 @@
 const BiographyPage = () => {
   return (
     <div>
-      <h1>Biography reached</h1>
+      <h1>Biography section</h1>
     </div>
   );
 };
