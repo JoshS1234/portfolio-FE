@@ -1,8 +1,4 @@
-import {
-  getAllProjects,
-  getRandomProject,
-  getSpecificProject,
-} from "./apiCalls.js";
+import { getRandomProject } from "./apiCalls.js";
 import SingleProjectCard from "./SingleProjectCard";
 import { useEffect, useState } from "react";
 import "../styles/homepage.css";
@@ -36,7 +32,9 @@ const Homepage = () => {
         <p>Intro to Josh!!!</p>
       </div>
       <div className="singleProjectCard">
-        {isLoading ? (
+        {isError ? (
+          <p>There was an error...</p>
+        ) : isLoading ? (
           <p>Loading</p>
         ) : (
           <SingleProjectCard project={randomProj} />

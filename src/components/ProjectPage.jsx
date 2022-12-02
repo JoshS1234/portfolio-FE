@@ -1,11 +1,10 @@
-import { getAllProjects, getSpecificProject } from "./apiCalls.js";
+import { getAllProjects } from "./apiCalls.js";
 import { useEffect, useState } from "react";
 import "../styles/projectPage.css";
 import { Link } from "react-router-dom";
 
 const ProjectPage = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
 
   const [pythonProjectList, setPythonProjectList] = useState([]);
   const [javascriptProjectList, setJavascriptProjectList] = useState([]);
@@ -36,9 +35,6 @@ const ProjectPage = () => {
       })
       .then(() => {
         setIsLoading(false);
-      })
-      .catch((err) => {
-        setIsError(true);
       });
   }, []);
 
