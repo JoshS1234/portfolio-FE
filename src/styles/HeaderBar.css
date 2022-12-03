@@ -1,0 +1,11 @@
+.headerBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+}

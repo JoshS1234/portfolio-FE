@@ -6,11 +6,12 @@ import BiographyPage from "./components/BiographyPage";
 import ProjectPage from "./components/ProjectPage";
 import PageNotFound from "./components/PageNotFound";
 import SingleProjectPage from "./components/singleProjectPage";
+import HeaderBar from "./components/HeaderBar";
 
 function App() {
   return (
     <div className="overallAppSpace">
-      <h1>Joshua Spence - Portfolio</h1>
+      <HeaderBar />
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>

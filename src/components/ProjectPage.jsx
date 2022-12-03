@@ -15,7 +15,6 @@ const ProjectPage = () => {
 
     getAllProjects()
       .then((data) => {
-        console.log(data.data.projects);
         let projectArr = data.data.projects;
         setPythonProjectList(
           projectArr.filter((element) => {
@@ -69,7 +68,6 @@ const ProjectPage = () => {
             {pythonProjectList.map((project) => {
               return (
                 <>
-                  {console.log(project.project_id)}
                   <li key={project.project_id}>{project.name}</li>
                   <Link
                     className="navLink"
