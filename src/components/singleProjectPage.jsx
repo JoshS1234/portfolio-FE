@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const SingleProjectPage = () => {
   let url = window.location.href;
   let project_id = url.split(
-    "https://portfolio-joshua-spence.netlify.app/projects"
+    "https://portfolio-joshua-spence.netlify.app/projects/"
   )[1];
 
   const [isLoading, setIsLoading] = useState(false);
