@@ -1,19 +1,27 @@
 import "../styles/HeaderBar.css";
 
-const HeaderBar = () => {
+const HeaderBar = ({ showingContact, setShowingContact }) => {
   return (
     <div className="headerBarContainer">
       <div>
         <h1>Joshua Spence - Portfolio</h1>
       </div>
-      <div>
-        <p>Image of me?</p>
-      </div>
-      <div className="contactDetails">
-        <p>Change these for buttons + logos?</p>
-        <p>LinkedIn: www.linkedin.com/in/josh-s-spence</p>
-        <p>Github: https://github.com/JoshS1234</p>
-        <p>E-Mail: joshua.spence1994@googlemail.com</p>
+      <div className="selfie">
+        <img
+          src={require("./Images/WebsitePhoto.jpg")}
+          alt="Josh spence - Selfie"
+        />
+        <button
+          onClick={() => {
+            if (showingContact) {
+              setShowingContact(false);
+            } else {
+              setShowingContact(true);
+            }
+          }}
+        >
+          {showingContact ? "Hide" : "Contact me"}
+        </button>
       </div>
     </div>
   );

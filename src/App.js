@@ -7,11 +7,19 @@ import ProjectPage from "./components/ProjectPage";
 import PageNotFound from "./components/PageNotFound";
 import SingleProjectPage from "./components/singleProjectPage";
 import HeaderBar from "./components/HeaderBar";
+import ContactDetails from "./components/ContactDetails";
+import { useState } from "react";
 
 function App() {
+  const [showingContact, setShowingContact] = useState(false);
+
   return (
     <div className="overallAppSpace">
-      <HeaderBar />
+      <HeaderBar
+        setShowingContact={setShowingContact}
+        showingContact={showingContact}
+      />
+      {showingContact ? <ContactDetails /> : <></>}
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
@@ -24,6 +32,7 @@ function App() {
         <Route path="/about-me" element={<BiographyPage />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
+      <ContactDetails />
     </div>
   );
 }
