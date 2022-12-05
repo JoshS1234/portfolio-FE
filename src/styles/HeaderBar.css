@@ -6,11 +6,6 @@
   margin: 2% 0% 2% 0%;
 }
 
-.contactDetails {
-  display: flex;
-  flex-direction: column;
-}
-
 .selfie {
   width: 30%;
   display: flex;
@@ -20,4 +15,11 @@
 .selfie img {
   border-radius: 50%;
   border: 2px solid;
+}
+
+/* For PC  */
+@media only screen and (min-width: 600px) {
+  .selfie {
+    width: 10%;
+  }
 }
