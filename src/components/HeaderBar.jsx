@@ -1,10 +1,11 @@
 import "../styles/HeaderBar.css";
+import ContactDetails from "./ContactDetails";
 
 const HeaderBar = ({ showingContact, setShowingContact }) => {
   return (
     <div className="headerBarContainer">
-      <div>
-        <h1>Joshua Spence - Portfolio</h1>
+      <div className="title">
+        <h2>Joshua Spence - Portfolio</h2>
       </div>
       <div className="selfie">
         <img
@@ -20,8 +21,11 @@ const HeaderBar = ({ showingContact, setShowingContact }) => {
             }
           }}
         >
-          {showingContact ? "Hide" : "Contact me"}
+          {showingContact ? "Hide contact details" : "Contact me"}
         </button>
+      </div>
+      <div className="contacts">
+        {showingContact ? <ContactDetails /> : <></>}
       </div>
     </div>
   );

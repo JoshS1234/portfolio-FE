@@ -37,13 +37,7 @@ const Homepage = () => {
 
   return (
     <div className="homepageContainer">
-      <div
-        className="summaryBox"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <div className="summaryBox">
         <h1>I'm Josh. A junior full-stack software developer.</h1>
       </div>
 

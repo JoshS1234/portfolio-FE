@@ -25,6 +25,7 @@ const ContactDetails = () => {
             Github
           </a>
         </li>
+        <li>CV</li>
       </ul>
     </div>
   );

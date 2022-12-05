@@ -19,7 +19,6 @@ function App() {
         setShowingContact={setShowingContact}
         showingContact={showingContact}
       />
-      {showingContact ? <ContactDetails /> : <></>}
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
