@@ -12,11 +12,37 @@
   margin: 5%;
   padding: 2% 3% 2% 3%;
   border-radius: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
-.projectImage {
+.detailsAndImage {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsAndImage .imageOrVideo {
   width: 80%;
-  justify-content: center;
-  border-color: black;
-  border: 2px solid;
+}
+
+.imageOrVideo .projectImage {
+  width: 100%;
+}
+
+/* For PC  */
+@media only screen and (min-width: 600px) {
+  .detailsAndImage {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .detailsAndImage .imageOrVideo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .detailsAndImage .imageOrVideo .projectImage {
+    width: 40%;
+    justify-content: flex-end;
+  }
 }
