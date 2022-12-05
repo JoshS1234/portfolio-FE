@@ -56,12 +56,12 @@ const Homepage = () => {
           developer.
         </p>
         <p>
-          This is my portfolio site made using express on the backend, and react
-          for the frontend, feel free to take a look around. Below is the option
-          to scroll through a random selection of projects I have worked on
-          (there's also a "My Projects" page which you can look through more
-          methodically!). Feel free to get in touch if you have any questions,
-          work, or feedback on the portfolio site.
+          This is my portfolio site made using a PSQL database and an Express
+          API on the backend, and React for the frontend, feel free to take a
+          look around. Below is the option to scroll through a random selection
+          of projects I have worked on (there's also a "My Projects" page which
+          you can look through more methodically!). Feel free to get in touch if
+          you have any questions, work, or feedback on the portfolio site.
         </p>
       </div>
       {showRandomProj ? (
