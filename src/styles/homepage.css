@@ -22,3 +22,13 @@
   padding: 0% 3% 0% 3%;
   border-radius: 5%;
 }
+
+/* For PC  */
+@media only screen and (min-width: 600px) {
+  .homepageContainer .innerContainer {
+    background-color: red;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

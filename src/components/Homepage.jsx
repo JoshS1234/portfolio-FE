@@ -46,64 +46,68 @@ const Homepage = () => {
       >
         <h1>I'm Josh. A junior full-stack software developer.</h1>
       </div>
-      <div className="summaryBox">
-        <h4>My Story: </h4>
-        <p>
-          I have recently trained as a software developer through the
-          Northcoders software development bootcamp after working as a Maths
-          teacher for the last few years. I thoroughly enjoyed the coding
-          bootcamp, and I am currently looking for my first job as a software
-          developer.
-        </p>
-        <p>
-          This is my portfolio site made using a PSQL database and an Express
-          API on the backend, and React for the frontend, feel free to take a
-          look around. Below is the option to scroll through a random selection
-          of projects I have worked on (there's also a "My Projects" page which
-          you can look through more methodically!). Feel free to get in touch if
-          you have any questions, work, or feedback on the portfolio site.
-        </p>
-      </div>
-      {showRandomProj ? (
-        <button
-          onClick={(event) => {
-            revealRandomProj(event);
-          }}
-        >
-          Hide random project
-        </button>
-      ) : (
-        <button
-          onClick={(event) => {
-            revealRandomProj(event);
-          }}
-        >
-          Show random project
-        </button>
-      )}
 
-      {showRandomProj ? (
-        <div className="singleProjectCard">
-          {isError ? (
-            <p>There was an error...</p>
-          ) : isLoading ? (
-            <p>Loading</p>
-          ) : (
-            <>
-              <button
-                onClick={(event) => {
-                  setNextProject(nextProject + 1);
-                }}
-              >
-                Next project
-              </button>
-              <SingleProjectCard project={randomProj} />
-            </>
-          )}
+      <div className="innerContainer">
+        <div className="summaryBox">
+          <h4>My Story: </h4>
+          <p>
+            I have recently trained as a software developer through the
+            Northcoders software development bootcamp after working as a Maths
+            teacher for the last few years. I thoroughly enjoyed the coding
+            bootcamp, and I am currently looking for my first job as a software
+            developer.
+          </p>
+          <p>
+            This is my portfolio site made using a PSQL database and an Express
+            API on the backend, and React for the frontend, feel free to take a
+            look around. Below is the option to scroll through a random
+            selection of projects I have worked on (there's also a "My Projects"
+            page which you can look through more methodically!). Feel free to
+            get in touch if you have any questions, work, or feedback on the
+            portfolio site.
+          </p>
         </div>
-      ) : (
-        <p></p>
-      )}
+        {showRandomProj ? (
+          <button
+            onClick={(event) => {
+              revealRandomProj(event);
+            }}
+          >
+            Hide random project
+          </button>
+        ) : (
+          <button
+            onClick={(event) => {
+              revealRandomProj(event);
+            }}
+          >
+            Show random project
+          </button>
+        )}
+
+        {showRandomProj ? (
+          <div className="singleProjectCard">
+            {isError ? (
+              <p>There was an error...</p>
+            ) : isLoading ? (
+              <p>Loading</p>
+            ) : (
+              <>
+                <button
+                  onClick={(event) => {
+                    setNextProject(nextProject + 1);
+                  }}
+                >
+                  Next project
+                </button>
+                <SingleProjectCard project={randomProj} />
+              </>
+            )}
+          </div>
+        ) : (
+          <p></p>
+        )}
+      </div>
     </div>
   );
 };

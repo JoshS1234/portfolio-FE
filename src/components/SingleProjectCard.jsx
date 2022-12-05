@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
+import "../styles/singleProjectCard.css";
 
 const SingleProjectCard = ({ project }) => {
   useEffect(() => {}, [project]);
