@@ -42,64 +42,64 @@ const ProjectPage = () => {
   ) : (
     <div className="projectListContainer">
       <div className="projectListBox">
-        <>
-          <h3>Javascript projects</h3>
-          <ul>
-            {javascriptProjectList.map((project) => {
-              return (
-                <>
-                  <li key={project.project_id}>{project.name}</li>
+        <h3>Javascript projects</h3>
+        <ul>
+          {javascriptProjectList.map((project) => {
+            return (
+              <li key={project.project_id}>
+                <div className="nameAndButton">
+                  {project.name}{" "}
                   <Link
                     className="navLink"
                     to={`/projects/${project.project_id}`}
                   >
                     <button>more details...</button>
                   </Link>
-                </>
-              );
-            })}
-          </ul>
-        </>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
       <div className="projectListBox">
-        <>
-          <h3>Python projects</h3>
-          <ul>
-            {pythonProjectList.map((project) => {
-              return (
-                <>
-                  <li key={project.project_id}>{project.name}</li>
+        <h3>Python projects</h3>
+        <ul>
+          {pythonProjectList.map((project) => {
+            return (
+              <li key={project.project_id}>
+                <div className="nameAndButton">
+                  {project.name}{" "}
                   <Link
                     className="navLink"
                     to={`/projects/${project.project_id}`}
                   >
                     <button>more details...</button>
                   </Link>
-                </>
-              );
-            })}
-          </ul>
-        </>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
       <div className="projectListBox">
-        <>
-          <h3>MATLAB projects</h3>
-          <ul>
-            {matlabProjectList.map((project) => {
-              return (
-                <>
-                  <li key={project.project_id}>{project.name}</li>
+        <h3>MATLAB projects</h3>
+        <ul>
+          {matlabProjectList.map((project) => {
+            return (
+              <li key={project.project_id}>
+                <div className="nameAndButton">
+                  {project.name}{" "}
                   <Link
                     className="navLink"
                     to={`/projects/${project.project_id}`}
                   >
                     <button>more details...</button>
                   </Link>
-                </>
-              );
-            })}
-          </ul>
-        </>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

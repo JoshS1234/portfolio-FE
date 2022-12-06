@@ -1,8 +1,9 @@
 .overallAppSpace {
   width: 100%;
-  background-color: #f6c6ea;
-  background-image: url(./images/fork-plate-knife-svgrepo-com.svg);
+  background-color: #dce0fc;
+  background-image: url(./images/coding-svgrepo-com.svg);
   background-repeat: repeat;
+  background-size: 60px 60px;
 }
 
 /* .App {

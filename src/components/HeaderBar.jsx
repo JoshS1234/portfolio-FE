@@ -5,7 +5,8 @@ const HeaderBar = ({ showingContact, setShowingContact }) => {
   return (
     <div className="headerBarContainer">
       <div className="title">
-        <h2>Joshua Spence - Portfolio</h2>
+        <h1>Joshua Spence</h1>
+        <h1>Portfolio</h1>
       </div>
       <div className="selfie">
         <img

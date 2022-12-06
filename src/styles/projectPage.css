@@ -1,5 +1,4 @@
 .projectListContainer {
-  background-color: red;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -7,16 +6,37 @@
 
 .projectListBox {
   display: flex;
+  background-color: #bbd1f5aa;
+  border: 1px solid;
   flex-direction: column;
   width: 80%;
   justify-content: left;
-  background-color: yellow;
   margin: 2%;
   padding: 0% 3% 0% 3%;
   border-radius: 5%;
 }
 
+.nameAndButton {
+  display: flex;
+  flex-direction: column;
+}
+
 .navLink button {
   font-size: large;
   text-decoration: none;
+}
+
+/* For PC  */
+@media only screen and (min-width: 600px) {
+  .projectListContainer {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .projectListBox {
+    min-width: 20%;
+    min-height: 300px;
+    height: 100%;
+    overflow: auto;
+  }
 }

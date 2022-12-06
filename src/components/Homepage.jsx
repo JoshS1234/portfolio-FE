@@ -86,7 +86,7 @@ const Homepage = () => {
             ) : isLoading ? (
               <p>Loading</p>
             ) : (
-              <>
+              <div className="nextProjectButton">
                 <button
                   onClick={(event) => {
                     setNextProject(nextProject + 1);
@@ -95,7 +95,7 @@ const Homepage = () => {
                   Next project
                 </button>
                 <SingleProjectCard project={randomProj} />
-              </>
+              </div>
             )}
           </div>
         ) : (

@@ -25,7 +25,15 @@ const ContactDetails = () => {
             Github
           </a>
         </li>
-        <li>CV</li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/u/0/uc?id=14DrBv531MijNcyJL3o3tMyunopoaSEx8&export=download"
+          >
+            CV
+          </a>
+        </li>
       </ul>
     </div>
   );

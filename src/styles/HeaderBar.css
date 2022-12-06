@@ -24,9 +24,24 @@
   border: 2px solid;
 }
 
+.contacts {
+  width: 100%;
+}
+
 /* For PC  */
 @media only screen and (min-width: 600px) {
+  .headerBarContainer {
+    justify-content: space-around;
+  }
+
+  .title {
+    width: 70%;
+  }
   .selfie {
     width: 10%;
+  }
+
+  .contacts {
+    width: 15%;
   }
 }
