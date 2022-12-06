@@ -7,7 +7,7 @@ const Homepage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  const [showRandomProj, setShowRandomProj] = useState(false);
+  // const [showRandomProj, setShowRandomProj] = useState(false);
   const [randomProj, setRandomProj] = useState({});
   const [nextProject, setNextProject] = useState(0);
 
@@ -27,13 +27,13 @@ const Homepage = () => {
       });
   }, [nextProject]);
 
-  const revealRandomProj = (event) => {
-    if (showRandomProj === false) {
-      setShowRandomProj(true);
-    } else {
-      setShowRandomProj(false);
-    }
-  };
+  // const revealRandomProj = (event) => {
+  //   if (showRandomProj === false) {
+  //     setShowRandomProj(true);
+  //   } else {
+  //     setShowRandomProj(false);
+  //   }
+  // };
 
   return (
     <div className="homepageContainer">
@@ -79,24 +79,49 @@ const Homepage = () => {
         )} */}
 
         {/* {showRandomProj ? (
+          <div className="singleProjectCard"> */}
+        {isError ? (
+          <p>There was an error...</p>
+        ) : isLoading ? (
           <div className="singleProjectCard">
-            {isError ? (
-              <p>There was an error...</p>
-            ) : isLoading ? (
-              <p>Loading</p>
-            ) : ( */}
-        <div className="singleProjectCard">
-          <div className="nextProjectButton">
-            <button
-              onClick={(event) => {
-                setNextProject(nextProject + 1);
+            <div className="nextProjectButton">
+              <button
+                onClick={(event) => {
+                  setNextProject(nextProject + 1);
+                }}
+              >
+                Next project
+              </button>
+            </div>
+            <SingleProjectCard
+              project={{
+                description: "loading",
+                github: "N/A",
+                hosted: "",
+                image_url: undefined,
+                language: "N/A",
+                name: "Loading",
+                tech: "",
+                video_url: "",
+                year: 2022,
               }}
-            >
-              Next project
-            </button>
+            />
           </div>
-          <SingleProjectCard project={randomProj} />
-        </div>
+        ) : (
+          <div className="singleProjectCard">
+            <div className="nextProjectButton">
+              <button
+                onClick={(event) => {
+                  setNextProject(nextProject + 1);
+                }}
+              >
+                Next project
+              </button>
+            </div>
+            {console.log(randomProj)}
+            <SingleProjectCard project={randomProj} />
+          </div>
+        )}
         {/*)}
           </div>
         ) : (

@@ -11,20 +11,19 @@ const SingleProjectCard = ({ project }) => {
       <div className="detailsAndImage">
         <div className="imageOrVideo">
           {project.image_url === "" ? (
-            <></>
+            project.video_url === "" ? (
+              <></>
+            ) : (
+              <YoutubeEmbed
+                className="projectVideo"
+                embedId={project.video_url}
+              />
+            )
           ) : (
             <img
               className="projectImage"
               src={require(`./Images/${project.project_id}.png`)}
               alt="demonstration of the functionality of this project"
-            />
-          )}
-          {project.video_url === "" ? (
-            <></>
-          ) : (
-            <YoutubeEmbed
-              className="projectVideo"
-              embedId={project.video_url}
             />
           )}
         </div>
