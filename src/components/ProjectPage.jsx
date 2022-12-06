@@ -46,16 +46,24 @@ const ProjectPage = () => {
         <ul>
           {javascriptProjectList.map((project) => {
             return (
-              <li key={project.project_id}>
-                <div className="nameAndButton">
-                  {project.name}{" "}
-                  <Link
-                    className="navLink"
-                    to={`/projects/${project.project_id}`}
-                  >
-                    <button>more details...</button>
-                  </Link>
-                </div>
+              // <li key={project.project_id}>
+              //   <div className="nameAndButton">
+              //     {project.name}{" "}
+              //     <Link
+              //       className="navLink"
+              //       to={`/projects/${project.project_id}`}
+              //     >
+              //       <button>more details...</button>
+              //     </Link>
+              //   </div>
+              // </li>
+              <li>
+                <Link
+                  className="navLink"
+                  to={`/projects/${project.project_id}`}
+                >
+                  <button className="box">{`${project.name}, ${project.year}`}</button>
+                </Link>
               </li>
             );
           })}
@@ -66,16 +74,15 @@ const ProjectPage = () => {
         <ul>
           {pythonProjectList.map((project) => {
             return (
-              <li key={project.project_id}>
-                <div className="nameAndButton">
-                  {project.name}{" "}
-                  <Link
-                    className="navLink"
-                    to={`/projects/${project.project_id}`}
-                  >
-                    <button>more details...</button>
-                  </Link>
-                </div>
+              <li>
+                <Link
+                  className="navLink"
+                  to={`/projects/${project.project_id}`}
+                >
+                  <button className="box">
+                    {`${project.name}, ${project.year}`}
+                  </button>
+                </Link>
               </li>
             );
           })}
@@ -86,16 +93,15 @@ const ProjectPage = () => {
         <ul>
           {matlabProjectList.map((project) => {
             return (
-              <li key={project.project_id}>
-                <div className="nameAndButton">
-                  {project.name}{" "}
-                  <Link
-                    className="navLink"
-                    to={`/projects/${project.project_id}`}
-                  >
-                    <button>more details...</button>
-                  </Link>
-                </div>
+              <li>
+                <Link
+                  className="navLink"
+                  to={`/projects/${project.project_id}`}
+                >
+                  <button className="box">
+                    {`${project.name}, ${project.year}`}
+                  </button>
+                </Link>
               </li>
             );
           })}

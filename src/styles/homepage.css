@@ -11,31 +11,33 @@
   align-items: center;
 }
 .homepageContainer .summaryBox {
-  background-color: #bbd1f5aa;
+  background-color: #4c4066;
+  color: white;
   /* background-color: rgba(188, 133, 244, alpha); */
 }
 
 .homepageContainer .innerContainer .summaryBox {
   width: 80%;
-  background-color: #bbd1f5aa;
+  background-color: #4c4066;
   justify-content: left;
   margin: 1%;
   padding: 0% 3% 0% 3%;
   border-radius: 5%;
+  color: white;
 }
 
 .homepageContainer .innerContainer .singleProjectCard {
   width: 80%;
   justify-content: left;
-  background-color: #bbd1f5aa;
   margin: 5%;
   padding: 0% 3% 0% 3%;
   border-radius: 5%;
   word-wrap: break-word;
+  color: white;
 }
 
-.nextProjectButton {
-  margin: 1%;
+.singleProjectCard .nextProjectButton {
+  margin: 1% 0% 0% 0%;
 }
 
 /* For PC  */

@@ -2,14 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c8eeeecc;
+  background-color: #fcbb90;
   width: 100%;
   border: 1px solid;
+  color: black;
 }
 
 .linkContainer ul {
   list-style: none;
   align-items: right;
+}
+
+.linkContainer li a {
 }
 
 /* For PC  */

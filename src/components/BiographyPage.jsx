@@ -3,15 +3,13 @@ import "../styles/BiographyPage.css";
 const BiographyPage = () => {
   return (
     <div className="BiographyContainer">
-      <button>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://drive.google.com/u/0/uc?id=14DrBv531MijNcyJL3o3tMyunopoaSEx8&export=download"
-        >
-          Download CV
-        </a>
-      </button>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://drive.google.com/u/0/uc?id=14DrBv531MijNcyJL3o3tMyunopoaSEx8&export=download"
+      >
+        <button className="CVButton">Download CV</button>
+      </a>
       <div className="summaryBox">
         <h2>My goals</h2>
         <p>

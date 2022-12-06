@@ -6,37 +6,82 @@
 
 .projectListBox {
   display: flex;
-  background-color: #bbd1f5aa;
+  background-color: #4c4066;
   border: 1px solid;
   flex-direction: column;
-  width: 80%;
-  justify-content: left;
-  margin: 2%;
-  padding: 0% 3% 0% 3%;
+  width: 90%;
   border-radius: 5%;
+  color: white;
 }
 
-.nameAndButton {
+.projectListBox ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.navLink button {
-  font-size: large;
-  text-decoration: none;
+.projectListBox ul li {
+  min-width: 35%;
+  max-width: 35%;
+  min-height: 100px;
+  margin: 3%;
+  word-wrap: break-word;
+}
+
+.projectListBox ul li .navLink .box {
+  min-width: 100%;
+  min-height: 100%;
+  word-wrap: break-word;
+  background-color: #fff0ba;
 }
 
 /* For PC  */
 @media only screen and (min-width: 600px) {
   .projectListContainer {
+    align-items: center;
+    display: flex;
     flex-direction: row;
-    flex-grow: 1;
   }
 
   .projectListBox {
-    min-width: 20%;
-    min-height: 300px;
-    height: 100%;
-    overflow: auto;
+    display: flex;
+    background-color: #4c4066;
+    border: 1px solid;
+    flex-direction: column;
+    width: 80%;
+    justify-content: left;
+    margin: 2%;
+    padding: 0% 3% 0% 3%;
+    border-radius: 5%;
+    color: white;
+  }
+
+  .projectListBox ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .projectListBox ul li .navLink .box {
+    min-width: 150px;
+    max-width: 150px;
+    background-color: #fff0ba;
+    min-height: 150px;
+    max-height: 150px;
+    margin: 20px;
+    word-wrap: break-word;
+  }
+
+  .nameAndButton {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navLink button {
+    font-size: large;
+    text-decoration: none;
   }
 }

@@ -5,7 +5,8 @@
   justify-content: space-between;
   width: 100%;
   margin: 0% 0% 0% 0%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
 }
 
 .title {
@@ -44,7 +45,7 @@
   }
 
   .contacts {
-    width: 15%;
+    width: 18%;
     margin: 0% 2% 1% 0%;
   }
 }

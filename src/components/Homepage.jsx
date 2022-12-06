@@ -60,7 +60,7 @@ const Homepage = () => {
             don't hesitate to get in touch!
           </p>
         </div>
-        {showRandomProj ? (
+        {/* {showRandomProj ? (
           <button
             onClick={(event) => {
               revealRandomProj(event);
@@ -76,30 +76,32 @@ const Homepage = () => {
           >
             Show random project
           </button>
-        )}
+        )} */}
 
-        {showRandomProj ? (
+        {/* {showRandomProj ? (
           <div className="singleProjectCard">
             {isError ? (
               <p>There was an error...</p>
             ) : isLoading ? (
               <p>Loading</p>
-            ) : (
-              <div className="nextProjectButton">
-                <button
-                  onClick={(event) => {
-                    setNextProject(nextProject + 1);
-                  }}
-                >
-                  Next project
-                </button>
-                <SingleProjectCard project={randomProj} />
-              </div>
-            )}
+            ) : ( */}
+        <div className="singleProjectCard">
+          <div className="nextProjectButton">
+            <button
+              onClick={(event) => {
+                setNextProject(nextProject + 1);
+              }}
+            >
+              Next project
+            </button>
+          </div>
+          <SingleProjectCard project={randomProj} />
+        </div>
+        {/*)}
           </div>
         ) : (
           <p></p>
-        )}
+        )} */}
       </div>
     </div>
   );

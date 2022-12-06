@@ -2,12 +2,17 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+.details a {
+  color: greenyellow;
 }
 
 .singleProjectCard {
   width: 80%;
   justify-content: left;
-  background-color: #bbd1f5aa;
+  background-color: #4c4066;
   border: 1px solid;
 
   margin: 5%;
@@ -57,10 +62,12 @@
 
   .detailsAndImage .imageOrVideo {
     width: 50%;
+    margin: 2%;
+    justify-content: center;
   }
 
   .imageOrVideo .projectImage {
-    width: 60%;
+    width: 70%;
     border: 2px solid;
   }
 }
