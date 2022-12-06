@@ -28,3 +28,8 @@
   padding: 1% 0% 1% 0%;
   background-color: aliceblue;
 }
+
+.navigation li .navLink button:hover {
+  background-color: lightgray;
+  color: black;
+}

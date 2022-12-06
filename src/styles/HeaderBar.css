@@ -31,11 +31,12 @@
 /* For PC  */
 @media only screen and (min-width: 600px) {
   .headerBarContainer {
-    justify-content: space-around;
+    justify-content: right;
   }
 
   .title {
-    width: 70%;
+    width: 80%;
+    font-size: x-large;
   }
   .selfie {
     width: 10%;

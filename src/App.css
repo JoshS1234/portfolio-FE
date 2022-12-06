@@ -1,15 +1,15 @@
-.overallAppSpace {
+body {
   width: 100%;
   background-color: #dce0fc;
   background-image: url(./images/coding-svgrepo-com.svg);
   background-repeat: repeat;
-  background-size: 60px 60px;
+  background-size: 80px 80px;
 }
 
-/* .App {
-  margin-top: 5vh;
-  width: min(75vw, 400px);
-  min-height: min(75vh, 400px);
-  text-align: center;
-  justify-content: center;
-} */
+/* For PC  */
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url(./images/coding-svgrepo-com-fullscreen.svg);
+    background-size: 200px 200px;
+  }
+}

@@ -25,9 +25,13 @@ const HeaderBar = ({ showingContact, setShowingContact }) => {
           {showingContact ? "Hide contact details" : "Contact me"}
         </button>
       </div>
-      <div className="contacts">
-        {showingContact ? <ContactDetails /> : <></>}
-      </div>
+      {showingContact ? (
+        <div className="contacts">
+          <ContactDetails />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
