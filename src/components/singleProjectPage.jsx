@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const SingleProjectPage = () => {
   let url = window.location.href;
-  // let project_id = url.split(
-  //   "https://portfolio-joshua-spence.netlify.app/projects/"
-  // )[1];
+  let project_id = url.split(
+    "https://portfolio-joshua-spence.netlify.app/projects/"
+  )[1];
 
-  let project_id = url.split("localhost:3000/projects/")[1];
+  // let project_id = url.split("localhost:3000/projects/")[1];
 
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
