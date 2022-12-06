@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import YoutubeEmbed from "./YoutubeEmbed";
-import "../styles/singleProjectCard.css";
+import "../styles/singleProjectPage.css";
 
 const SingleProjectCard = ({ project }) => {
   useEffect(() => {}, [project]);
 
   return (
-    <div className="projectCard">
+    <div className="projectCardContainer">
       <h3>Project Title: {project.name}</h3>
       <div className="detailsAndImage">
         <div className="imageOrVideo">
