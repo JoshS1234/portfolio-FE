@@ -35,8 +35,9 @@
   }
 
   .title {
-    width: 80%;
+    width: 85%;
     font-size: x-large;
+    align-items: left;
   }
   .selfie {
     width: 10%;
@@ -44,5 +45,6 @@
 
   .contacts {
     width: 15%;
+    margin: 0% 2% 1% 0%;
   }
 }
