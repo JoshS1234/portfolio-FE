@@ -46,19 +46,18 @@ const Homepage = () => {
           <h4>My Story: </h4>
           <p>
             I have recently trained as a software developer through the
-            Northcoders software development bootcamp after working as a Maths
-            teacher for the last few years. I thoroughly enjoyed the coding
-            bootcamp, and I am currently looking for my first job as a software
-            developer.
+            Northcoders bootcamp after working as a Maths teacher for the last
+            few years. I thoroughly enjoyed the coding bootcamp, and I am
+            currently looking for my first job as a software developer.
           </p>
           <p>
-            This is my portfolio site made using a PSQL database and an Express
-            API on the backend, and React for the frontend, feel free to take a
-            look around. Below is the option to scroll through a random
-            selection of projects I have worked on (there's also a "My Projects"
-            page which you can look through more methodically!). Feel free to
-            get in touch if you have any questions, work, or feedback on the
-            portfolio site.
+            This is my portfolio site. I made it using a PSQL database with an
+            Express API for the backend, and I used React for the frontend, feel
+            free to take a look around. Below is the option to scroll through a
+            random selection of projects I have worked on (there's also a "My
+            Projects" page which you can look through more methodically!). If
+            you have any questions, work, or feedback on the portfolio site,
+            don't hesitate to get in touch!
           </p>
         </div>
         {showRandomProj ? (
