@@ -8,15 +8,17 @@ const ContactDetails = () => {
           <p>E-Mail: joshua.spence@hotmail.co.uk</p>
         </li>
         <li>
-          <a
+          LinkedIn : https:www.linkedin.com/in/josh-s-spence
+          {/* <a
             target="_blank"
             rel="noreferrer"
             href="https:www.linkedin.com/in/josh-s-spence"
           >
             LinkedIn
-          </a>
+          </a> */}
         </li>
         <li>
+          Github : https://github.com/JoshS1234
           <a
             target="_blank"
             rel="noreferrer"
@@ -25,7 +27,7 @@ const ContactDetails = () => {
             Github
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             target="_blank"
             rel="noreferrer"
@@ -33,7 +35,7 @@ const ContactDetails = () => {
           >
             CV
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
