@@ -11,7 +11,7 @@ const ContactDetails = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https:www.linkedin.com/in/josh-s-spence"
+            href="https://www.linkedin.com/in/josh-s-spence"
           >
             LinkedIn
           </a>
