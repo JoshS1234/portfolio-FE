@@ -66,8 +66,8 @@
   }
 
   .projectListBox ul li .navLink .box {
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 100%;
+    max-width: 100%;
     background-color: #fff0ba;
     min-height: 150px;
     max-height: 150px;
