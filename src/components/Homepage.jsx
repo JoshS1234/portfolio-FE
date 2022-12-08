@@ -118,7 +118,6 @@ const Homepage = () => {
                 Next project
               </button>
             </div>
-            {console.log(randomProj)}
             <SingleProjectCard project={randomProj} />
           </div>
         )}
