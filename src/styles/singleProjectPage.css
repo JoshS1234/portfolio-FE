@@ -41,6 +41,10 @@
   border: 2px solid;
 }
 
+.details h5 {
+  word-wrap: break-word;
+}
+
 /* For PC  */
 @media only screen and (min-width: 600px) {
   .projectCardContainer {
