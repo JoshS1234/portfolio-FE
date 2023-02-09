@@ -30,7 +30,7 @@
 }
 
 /* For PC  */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
   .headerBarContainer {
     justify-content: right;
   }

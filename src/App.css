@@ -7,7 +7,7 @@ body {
 }
 
 /* For PC  */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
   body {
     background-image: url(./images/coding-svgrepo-com-fullscreen.svg);
     background-size: 200px 200px;
